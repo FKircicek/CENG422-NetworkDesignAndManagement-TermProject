@@ -1,0 +1,63 @@
+Jun 03 15:33:38.275 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 03 15:33:38.275 HYPERVISOR: Started on IP = localhost, TCP port = 56050.
+Jun 03 15:33:38.696 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 03 15:33:38.696 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips 
+Jun 03 15:33:38.696 GENERAL: working_dir=C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips
+Jun 03 15:33:38.696 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\658e0d16-7f06-4e9b-8f40-296548aadd81 
+Jun 03 15:33:38.696 GENERAL: working_dir=C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\658e0d16-7f06-4e9b-8f40-296548aadd81
+Jun 03 15:33:38.704 HYPERVISOR: exec_cmd: vm create FactoryFloor3 3 c3600 
+Jun 03 15:33:38.704 VM: VM FactoryFloor3 created.
+Jun 03 15:33:38.704 HYPERVISOR: exec_cmd: vm set_con_tcp_port FactoryFloor3 5050 
+Jun 03 15:33:38.704 HYPERVISOR: exec_cmd: c3600 get_mac_addr FactoryFloor3 
+Jun 03 15:33:38.712 HYPERVISOR: exec_cmd: vm set_exec_area FactoryFloor3 64 
+Jun 03 15:33:38.715 HYPERVISOR: exec_cmd: vm get_status FactoryFloor3 
+Jun 03 15:33:38.717 HYPERVISOR: exec_cmd: vm set_idle_pc FactoryFloor3 0x6050b114 
+Jun 03 15:33:38.720 HYPERVISOR: exec_cmd: vm set_ios FactoryFloor3 C:/Users/fatih/GNS3/images/IOS/c3640-a3js-mz.124-25d-1.image 
+Jun 03 15:33:38.720 HYPERVISOR: exec_cmd: c3600 set_mac_addr FactoryFloor3 cc03.52e0.0000 
+Jun 03 15:33:38.720 HYPERVISOR: exec_cmd: vm set_nvram FactoryFloor3 256 
+Jun 03 15:33:38.727 HYPERVISOR: exec_cmd: vm set_ram FactoryFloor3 192 
+Jun 03 15:33:38.729 HYPERVISOR: exec_cmd: vm get_status FactoryFloor3 
+Jun 03 15:33:38.729 HYPERVISOR: exec_cmd: vm slot_add_binding FactoryFloor3 0 0 NM-1FE-TX 
+Jun 03 15:33:38.729 HYPERVISOR: exec_cmd: vm get_status FactoryFloor3 
+Jun 03 15:33:38.729 HYPERVISOR: exec_cmd: vm slot_add_binding FactoryFloor3 1 0 NM-1FE-TX 
+Jun 03 15:33:38.729 HYPERVISOR: exec_cmd: vm get_status FactoryFloor3 
+Jun 03 15:33:38.729 HYPERVISOR: exec_cmd: vm slot_add_binding FactoryFloor3 2 0 NM-1FE-TX 
+Jun 03 15:33:38.737 HYPERVISOR: exec_cmd: vm get_status FactoryFloor3 
+Jun 03 15:33:38.737 HYPERVISOR: exec_cmd: vm slot_add_binding FactoryFloor3 3 0 NM-1FE-TX 
+Jun 03 15:33:47.819 HYPERVISOR: exec_cmd: nio create_udp udp-1154b146-4635-4097-9e68-719058dddea4 10010 127.0.0.1 10011 
+Jun 03 15:33:48.607 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FactoryFloor3 0 0 udp-1154b146-4635-4097-9e68-719058dddea4 
+Jun 03 15:33:48.616 HYPERVISOR: exec_cmd: vm get_status FactoryFloor3 
+Jun 03 15:33:58.638 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Jun 03 15:33:58.638 VM: VM Ghost created.
+Jun 03 15:33:58.642 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/fatih/GNS3/images/IOS/c3640-a3js-mz.124-25d-1.image 
+Jun 03 15:33:58.642 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 03 15:33:58.642 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\c3640-a3js-mz.124-25d-1.image-192.ghost 
+Jun 03 15:33:58.647 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Jun 03 15:33:58.647 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 03 15:33:58.651 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jun 03 15:33:58.651 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 03 15:33:59.029 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 03 15:33:59.029 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 03 15:33:59.161 VM: VM Ghost shutdown.
+Jun 03 15:33:59.161 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jun 03 15:33:59.165 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 03 15:33:59.165 VM: VM Ghost destroyed.
+Jun 03 15:33:59.178 HYPERVISOR: exec_cmd: vm set_ghost_status FactoryFloor3 2 
+Jun 03 15:33:59.186 HYPERVISOR: exec_cmd: vm set_ghost_file FactoryFloor3 C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\c3640-a3js-mz.124-25d-1.image-192.ghost 
+Jun 03 15:33:59.186 HYPERVISOR: exec_cmd: vm get_status FactoryFloor3 
+Jun 03 15:33:59.196 HYPERVISOR: exec_cmd: vm set_config FactoryFloor3 configs\i3_startup-config.cfg 
+Jun 03 15:33:59.196 HYPERVISOR: exec_cmd: vm start FactoryFloor3 
+Jun 03 15:34:29.591 HYPERVISOR: exec_cmd: vm extract_config FactoryFloor3 
+Jun 03 15:38:52.749 HYPERVISOR: exec_cmd: vm get_status FactoryFloor3 
+Jun 03 15:38:52.752 HYPERVISOR: exec_cmd: vm stop FactoryFloor3 
+Jun 03 15:38:52.875 VM: VM FactoryFloor3 shutdown.
+Jun 03 15:38:52.881 HYPERVISOR: exec_cmd: vm extract_config FactoryFloor3 
+Jun 03 15:44:27.398 HYPERVISOR: exec_cmd: vm set_ghost_status FactoryFloor3 2 
+Jun 03 15:44:27.414 HYPERVISOR: exec_cmd: vm set_ghost_file FactoryFloor3 C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\c3640-a3js-mz.124-25d-1.image-192.ghost 
+Jun 03 15:44:27.414 HYPERVISOR: exec_cmd: vm get_status FactoryFloor3 
+Jun 03 15:44:27.420 HYPERVISOR: exec_cmd: vm set_config FactoryFloor3 configs\i3_startup-config.cfg 
+Jun 03 15:44:27.420 HYPERVISOR: exec_cmd: vm start FactoryFloor3 
+Jun 03 15:46:57.540 HYPERVISOR: exec_cmd: vm get_status FactoryFloor3 
+Jun 03 15:46:57.540 HYPERVISOR: exec_cmd: vm stop FactoryFloor3 
+Jun 03 15:46:57.705 VM: VM FactoryFloor3 shutdown.
+Jun 03 15:46:57.705 HYPERVISOR: exec_cmd: vm extract_config FactoryFloor3 

@@ -1,0 +1,51 @@
+Jun 03 15:33:37.338 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 03 15:33:37.340 HYPERVISOR: Started on IP = localhost, TCP port = 56044.
+Jun 03 15:33:37.387 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 03 15:33:37.387 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips 
+Jun 03 15:33:37.395 GENERAL: working_dir=C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips
+Jun 03 15:33:37.395 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\46c4d67a-343b-4d8d-afb6-85cfaeff399f 
+Jun 03 15:33:37.395 GENERAL: working_dir=C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\46c4d67a-343b-4d8d-afb6-85cfaeff399f
+Jun 03 15:33:37.395 HYPERVISOR: exec_cmd: vm create FactoryFloor1 1 c3600 
+Jun 03 15:33:37.395 VM: VM FactoryFloor1 created.
+Jun 03 15:33:37.395 HYPERVISOR: exec_cmd: vm set_con_tcp_port FactoryFloor1 5046 
+Jun 03 15:33:37.395 HYPERVISOR: exec_cmd: c3600 get_mac_addr FactoryFloor1 
+Jun 03 15:33:37.395 HYPERVISOR: exec_cmd: vm set_exec_area FactoryFloor1 64 
+Jun 03 15:33:37.395 HYPERVISOR: exec_cmd: vm get_status FactoryFloor1 
+Jun 03 15:33:37.395 HYPERVISOR: exec_cmd: vm set_idle_pc FactoryFloor1 0x6050b114 
+Jun 03 15:33:37.403 HYPERVISOR: exec_cmd: vm set_ios FactoryFloor1 C:/Users/fatih/GNS3/images/IOS/c3640-a3js-mz.124-25d-1.image 
+Jun 03 15:33:37.403 HYPERVISOR: exec_cmd: c3600 set_mac_addr FactoryFloor1 cc01.0810.0000 
+Jun 03 15:33:37.403 HYPERVISOR: exec_cmd: vm set_nvram FactoryFloor1 256 
+Jun 03 15:33:37.403 HYPERVISOR: exec_cmd: vm set_ram FactoryFloor1 192 
+Jun 03 15:33:37.403 HYPERVISOR: exec_cmd: vm get_status FactoryFloor1 
+Jun 03 15:33:37.403 HYPERVISOR: exec_cmd: vm slot_add_binding FactoryFloor1 0 0 NM-1FE-TX 
+Jun 03 15:33:37.403 HYPERVISOR: exec_cmd: vm get_status FactoryFloor1 
+Jun 03 15:33:37.403 HYPERVISOR: exec_cmd: vm slot_add_binding FactoryFloor1 1 0 NM-1FE-TX 
+Jun 03 15:33:37.403 HYPERVISOR: exec_cmd: vm get_status FactoryFloor1 
+Jun 03 15:33:37.403 HYPERVISOR: exec_cmd: vm slot_add_binding FactoryFloor1 2 0 NM-1FE-TX 
+Jun 03 15:33:37.403 HYPERVISOR: exec_cmd: vm get_status FactoryFloor1 
+Jun 03 15:33:37.403 HYPERVISOR: exec_cmd: vm slot_add_binding FactoryFloor1 3 0 NM-1FE-TX 
+Jun 03 15:33:46.295 HYPERVISOR: exec_cmd: nio create_udp udp-62158986-2ef0-41af-802a-7685efc81761 10002 127.0.0.1 10003 
+Jun 03 15:33:46.669 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FactoryFloor1 0 0 udp-62158986-2ef0-41af-802a-7685efc81761 
+Jun 03 15:33:46.676 HYPERVISOR: exec_cmd: vm get_status FactoryFloor1 
+Jun 03 15:33:49.452 HYPERVISOR: exec_cmd: nio create_udp udp-6e563835-5a26-4990-9f44-dd709a7d17dd 10024 127.0.0.1 10025 
+Jun 03 15:33:49.462 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FactoryFloor1 1 0 udp-6e563835-5a26-4990-9f44-dd709a7d17dd 
+Jun 03 15:33:49.462 HYPERVISOR: exec_cmd: vm get_status FactoryFloor1 
+Jun 03 15:33:59.186 HYPERVISOR: exec_cmd: vm set_ghost_status FactoryFloor1 2 
+Jun 03 15:33:59.196 HYPERVISOR: exec_cmd: vm set_ghost_file FactoryFloor1 C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\c3640-a3js-mz.124-25d-1.image-192.ghost 
+Jun 03 15:33:59.196 HYPERVISOR: exec_cmd: vm get_status FactoryFloor1 
+Jun 03 15:33:59.211 HYPERVISOR: exec_cmd: vm set_config FactoryFloor1 configs\i1_startup-config.cfg 
+Jun 03 15:33:59.211 HYPERVISOR: exec_cmd: vm start FactoryFloor1 
+Jun 03 15:34:29.592 HYPERVISOR: exec_cmd: vm extract_config FactoryFloor1 
+Jun 03 15:38:52.749 HYPERVISOR: exec_cmd: vm get_status FactoryFloor1 
+Jun 03 15:38:52.752 HYPERVISOR: exec_cmd: vm stop FactoryFloor1 
+Jun 03 15:38:52.897 VM: VM FactoryFloor1 shutdown.
+Jun 03 15:38:52.898 HYPERVISOR: exec_cmd: vm extract_config FactoryFloor1 
+Jun 03 15:44:27.381 HYPERVISOR: exec_cmd: vm set_ghost_status FactoryFloor1 2 
+Jun 03 15:44:27.381 HYPERVISOR: exec_cmd: vm set_ghost_file FactoryFloor1 C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\c3640-a3js-mz.124-25d-1.image-192.ghost 
+Jun 03 15:44:27.381 HYPERVISOR: exec_cmd: vm get_status FactoryFloor1 
+Jun 03 15:44:27.398 HYPERVISOR: exec_cmd: vm set_config FactoryFloor1 configs\i1_startup-config.cfg 
+Jun 03 15:44:27.398 HYPERVISOR: exec_cmd: vm start FactoryFloor1 
+Jun 03 15:46:57.540 HYPERVISOR: exec_cmd: vm get_status FactoryFloor1 
+Jun 03 15:46:57.540 HYPERVISOR: exec_cmd: vm stop FactoryFloor1 
+Jun 03 15:46:57.736 VM: VM FactoryFloor1 shutdown.
+Jun 03 15:46:57.736 HYPERVISOR: exec_cmd: vm extract_config FactoryFloor1 

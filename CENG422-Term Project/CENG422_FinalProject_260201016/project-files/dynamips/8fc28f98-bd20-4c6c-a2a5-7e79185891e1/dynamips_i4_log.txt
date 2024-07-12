@@ -1,0 +1,54 @@
+Jun 03 15:33:38.902 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 03 15:33:38.902 HYPERVISOR: Started on IP = localhost, TCP port = 56053.
+Jun 03 15:33:39.393 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 03 15:33:39.394 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips 
+Jun 03 15:33:39.394 GENERAL: working_dir=C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips
+Jun 03 15:33:39.394 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\8fc28f98-bd20-4c6c-a2a5-7e79185891e1 
+Jun 03 15:33:39.394 GENERAL: working_dir=C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\8fc28f98-bd20-4c6c-a2a5-7e79185891e1
+Jun 03 15:33:39.394 HYPERVISOR: exec_cmd: vm create OfficeFloor1 4 c3600 
+Jun 03 15:33:39.398 VM: VM OfficeFloor1 created.
+Jun 03 15:33:39.398 HYPERVISOR: exec_cmd: vm set_con_tcp_port OfficeFloor1 5052 
+Jun 03 15:33:39.398 HYPERVISOR: exec_cmd: c3600 get_mac_addr OfficeFloor1 
+Jun 03 15:33:39.400 HYPERVISOR: exec_cmd: vm set_exec_area OfficeFloor1 64 
+Jun 03 15:33:39.400 HYPERVISOR: exec_cmd: vm get_status OfficeFloor1 
+Jun 03 15:33:39.401 HYPERVISOR: exec_cmd: vm set_idle_pc OfficeFloor1 0x6050b114 
+Jun 03 15:33:39.402 HYPERVISOR: exec_cmd: vm set_ios OfficeFloor1 C:/Users/fatih/GNS3/images/IOS/c3640-a3js-mz.124-25d-1.image 
+Jun 03 15:33:39.403 HYPERVISOR: exec_cmd: c3600 set_mac_addr OfficeFloor1 cc04.0818.0000 
+Jun 03 15:33:39.403 HYPERVISOR: exec_cmd: vm set_nvram OfficeFloor1 256 
+Jun 03 15:33:39.405 HYPERVISOR: exec_cmd: vm set_ram OfficeFloor1 192 
+Jun 03 15:33:39.406 HYPERVISOR: exec_cmd: vm get_status OfficeFloor1 
+Jun 03 15:33:39.406 HYPERVISOR: exec_cmd: vm slot_add_binding OfficeFloor1 0 0 NM-1FE-TX 
+Jun 03 15:33:39.407 HYPERVISOR: exec_cmd: vm get_status OfficeFloor1 
+Jun 03 15:33:39.407 HYPERVISOR: exec_cmd: vm slot_add_binding OfficeFloor1 1 0 NM-1FE-TX 
+Jun 03 15:33:39.407 HYPERVISOR: exec_cmd: vm get_status OfficeFloor1 
+Jun 03 15:33:39.407 HYPERVISOR: exec_cmd: vm slot_add_binding OfficeFloor1 2 0 NM-1FE-TX 
+Jun 03 15:33:39.409 HYPERVISOR: exec_cmd: vm get_status OfficeFloor1 
+Jun 03 15:33:39.409 HYPERVISOR: exec_cmd: vm slot_add_binding OfficeFloor1 3 0 NM-1FE-TX 
+Jun 03 15:33:49.470 HYPERVISOR: exec_cmd: nio create_udp udp-7596919c-00d9-4121-b1f4-e87948ab78e8 10026 127.0.0.1 10027 
+Jun 03 15:33:49.759 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OfficeFloor1 1 0 udp-7596919c-00d9-4121-b1f4-e87948ab78e8 
+Jun 03 15:33:49.767 HYPERVISOR: exec_cmd: vm get_status OfficeFloor1 
+Jun 03 15:33:49.866 HYPERVISOR: exec_cmd: nio create_udp udp-8f15d34b-1823-4ed6-8a37-65aa7c5901a9 10030 127.0.0.1 10031 
+Jun 03 15:33:49.874 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OfficeFloor1 0 0 udp-8f15d34b-1823-4ed6-8a37-65aa7c5901a9 
+Jun 03 15:33:49.874 HYPERVISOR: exec_cmd: vm get_status OfficeFloor1 
+Jun 03 15:33:53.426 HYPERVISOR: exec_cmd: nio create_udp udp-ae13b410-14c3-4a5b-8372-f845f2d5be3a 10076 127.0.0.1 10077 
+Jun 03 15:33:53.426 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OfficeFloor1 2 0 udp-ae13b410-14c3-4a5b-8372-f845f2d5be3a 
+Jun 03 15:33:53.426 HYPERVISOR: exec_cmd: vm get_status OfficeFloor1 
+Jun 03 15:33:59.582 HYPERVISOR: exec_cmd: vm set_ghost_status OfficeFloor1 2 
+Jun 03 15:33:59.586 HYPERVISOR: exec_cmd: vm set_ghost_file OfficeFloor1 C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\c3640-a3js-mz.124-25d-1.image-192.ghost 
+Jun 03 15:33:59.586 HYPERVISOR: exec_cmd: vm get_status OfficeFloor1 
+Jun 03 15:33:59.594 HYPERVISOR: exec_cmd: vm set_config OfficeFloor1 configs\i4_startup-config.cfg 
+Jun 03 15:33:59.597 HYPERVISOR: exec_cmd: vm start OfficeFloor1 
+Jun 03 15:34:29.922 HYPERVISOR: exec_cmd: vm extract_config OfficeFloor1 
+Jun 03 15:38:52.898 HYPERVISOR: exec_cmd: vm get_status OfficeFloor1 
+Jun 03 15:38:52.907 HYPERVISOR: exec_cmd: vm stop OfficeFloor1 
+Jun 03 15:38:53.073 VM: VM OfficeFloor1 shutdown.
+Jun 03 15:38:53.074 HYPERVISOR: exec_cmd: vm extract_config OfficeFloor1 
+Jun 03 15:44:27.793 HYPERVISOR: exec_cmd: vm set_ghost_status OfficeFloor1 2 
+Jun 03 15:44:27.794 HYPERVISOR: exec_cmd: vm set_ghost_file OfficeFloor1 C:\Users\fatih\GNS3\projects\422copy\project-files\dynamips\c3640-a3js-mz.124-25d-1.image-192.ghost 
+Jun 03 15:44:27.794 HYPERVISOR: exec_cmd: vm get_status OfficeFloor1 
+Jun 03 15:44:27.794 HYPERVISOR: exec_cmd: vm set_config OfficeFloor1 configs\i4_startup-config.cfg 
+Jun 03 15:44:27.794 HYPERVISOR: exec_cmd: vm start OfficeFloor1 
+Jun 03 15:46:57.727 HYPERVISOR: exec_cmd: vm get_status OfficeFloor1 
+Jun 03 15:46:57.727 HYPERVISOR: exec_cmd: vm stop OfficeFloor1 
+Jun 03 15:46:57.923 VM: VM OfficeFloor1 shutdown.
+Jun 03 15:46:57.926 HYPERVISOR: exec_cmd: vm extract_config OfficeFloor1 
